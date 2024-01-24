@@ -54,3 +54,12 @@ a {
 .social_media a:hover {
     filter: brightness(1.2); /* Increase brightness on hover */
 }
+
+ul {
+    text-align: center; /* Center-align the list items */
+    display: inline-block; /* Display list items as inline-block */
+}
+  
+li {   
+    text-align: left; /* Reset text alignment inside list items */
+}
