@@ -11,6 +11,7 @@ body{
 .ribbon{
     background-color:rgb(232, 168, 5);
     padding: .5rem .3rem;
+    
 }
 
 .logo{
@@ -70,4 +71,8 @@ li {
 img{
     max-width: 100%;
     height: auto;
+}
+
+audio{
+    padding: .5rem .3rem; ;
 }
