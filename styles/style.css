@@ -1,14 +1,11 @@
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    background-color: blanchedalmond;
 }
 
 .titre_principal{
     color:rgb(232, 168, 5);
-}
-
-.header{
-    background-color: blanchedalmond;
 }
 
 .ribbon{
@@ -22,4 +19,38 @@ body{
 
 .concert{
     width: 300px;
+}
+
+a {
+    color: white; /* Set the default text color */
+    text-decoration: none; /* Remove the default underline */
+  }
+  
+  /* Hover styles for the link */
+  a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color:darkblue; /* Change text color on hover */
+  }
+
+  p{
+    margin: 5%;
+  }
+
+  hr{
+    border-color:rgb(232, 168, 5);
+    
+  }
+
+  .social_media img {
+    width: 30px; /* Adjust the width according to your icon size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.social_media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social_media a:hover {
+    filter: brightness(1.2); /* Increase brightness on hover */
 }
