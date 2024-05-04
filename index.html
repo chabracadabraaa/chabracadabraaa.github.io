@@ -1,42 +1,217 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="styles/style.css">
-		<title>The Mighty Three</title>
-	</head>
-	<body>
-		<header>
-			<h1 class="titre_principal"><strong><em> The Mighty Three pub </em></strong></h1>
-			<img src="images/logo.jpg" class="logo" alt="logo">
-			<nav class="ribbon">
-				<h2>
-				<a href="index.html">Homepage</a>
-				<a href="events.html">Events</a>
-				<a href="menu.html">Menus</a>
-				<a href="ourstory.html">Our Story</a>
-				<a href="gallery.html">Gallery</a>
-				</h2>
-			</nav>
-		</header>
-		<main>
-			<audio src="audio/boukmanflow.mp3" controls>Test</audio>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et sollicitudin ac orci phasellus egestas. Interdum varius sit amet mattis vulputate enim. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Sed faucibus turpis in eu mi. Enim ut sem viverra aliquet eget sit amet. In pellentesque massa placerat duis. At quis risus sed vulputate odio ut enim. Ac auctor augue mauris augue neque gravida. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor.
-				Iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui. Vitae ultricies leo integer malesuada nunc vel risus. Nunc congue nisi vitae suscipit tellus mauris a diam. Et malesuada fames ac turpis egestas integer eget. Non blandit massa enim nec dui. Sit amet venenatis urna cursus eget nunc scelerisque viverra. Pulvinar sapien et ligula ullamcorper malesuada proin. Vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur. Ac orci phasellus egestas tellus rutrum. Pulvinar proin gravida hendrerit lectus.
-			</p>
-		</main>
-		<footer>
-			<hr>
-			<div class="social_media">
-				<a href="http://www.facebook.com" target="_blank">
-					<img src="images/facebook_logo.png" alt="facebook">
-				</a>
-				<a href="http://www.instagram.com" target="_blank">
-					<img src="images/insta_logo.png" alt="instagram">
-				</a>
-			</div>
-			<p>&copy; 2024 www.themightythree.com All rights reserved.</p>
-		</footer>
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="A space where you can learn cool stuff about Melby">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <header>
+            <nav class="navigation-bar">
+                <ul>
+                    <!-- First item: logo that links to the homepage -->
+                    <li class="logo-item">
+                        <a href="index.html">
+                            <div class="logo-melbourne">
+                                <img src="img/melby_logo.png" alt="Melbourne Logo" />
+                            </div>
+                        </a>
+                    </li>
+                    <!-- Remaining menu items -->
+                    <li class="link-hover"><a href="#culture">CULTURE</a></li>
+                    <li class="link-hover"><a href="#eat_and_drink">EAT & DRINK</a></li>
+                    <li class="link-hover"><a href="#things_to_do">THINGS TO DO</a></li>
+                    <li class="link-hover"><a href="#whats_on">WHAT'S ON</a></li>
+                    <li>
+                        <a href="admin.html">
+                            <div class="logo-admin">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" width="3rem" height="3rem">  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" /></svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+         <!-- Hero Image Section -->
+        <div class="hero-header">
+            <div class="hero-text">
+                <h1>Welcome to Melbourne</h1>
+                <p>Explore the best of the capital and most populous city of the Australian state of Victoria</p>
+            </div>
+         </div>
+        <main>
+            <div class="feed">
+                <div class="card" id="culture">
+                    <h3>CULTURE</h3>
+                    <div class="card__element">
+                        <div>
+                            <h4 id="short">Short story of Melby</h4>
+                        </div>
+                        <div>
+                            <img src="img/culture.jpg" alt="Melbourne art tram">
+                        </div>
+                        <div>
+                            <p>
+                                The culture of Melbourne, the capital of the Australian state of Victoria, encompasses the city's artistic, culinary, literary, musical, political and social elements. Since its founding as a British settlement in 1835, Melbourne has been culturally influenced by European culture, particularly that of the British Isles. During the 1850s Victorian gold rush and in the decades that immediately followed, immigrants from many other parts of the world, notably China and the Americas, helped shape Melbourne's culture. Over time, Melbourne has become the birthplace of a number of unique cultural traits and institutions, and today it is one of the world's most multicultural cities.                            Traditionally acclaimed as Australia's "cultural capital", Melbourne topped the Economist Intelligence Unit's annual ranking of the world's most liveable cities throughout much of the 2010s, based in part on its cultural attributes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="eat_and_drink">
+                    <h3>EAT & DRINK</h3>
+                    <div class="card__element">
+                        <div>
+                            <h4 id="queen">Queen Victoria Market</h4>
+                        </div>
+                        <div>
+                            <img src="img/market.jpg" alt="Melbourne art tram">
+                        </div>
+                        <div>
+                            <p>With more than 600 traders, 'Vic Market' is a large open-air market brimming with food, shopping and cultural experiences. Early mornings are best for fresh produce, taste-testing or dodging the booming cries of stall holders. Lunch hour sees shoppers queuing for street food and flower stalls, serenaded by a rotating cast of buskers. The deli hall, lined with stalls selling everything from Australian cheeses, to Polish sausages and kangaroo biltong, has some Art Deco era flourishes.                            
+                            Clothing and knick-knack stalls dominate on Sunday; they're big on variety, but don’t come looking for style (if you’re in the market for sheepskin moccasins or cheap T-shirts, this is the place). Various tours are run by the market including heritage, cultural and food tours; check the official website for details.
+                             </p>
+                        </div>
+                    </div>
+                    <div class="card__element">
+                        <div>
+                            <h4>Decide the "best coffee" in Melbourne is at...</h4>
+                        </div>
+                        <div>
+                            <img src="img/coffee.jpg" alt="Melbourne coffee culture">
+                        </div>
+                        <div>
+                            <p>
+                                It may have been Italian immigrants who first brought a passion for quality coffee to these shores, but now the tide has turned, and Aussies (and Kiwis) are leaders in the dark arts of the espresso machine. Declaring it may risk an international incident, but Melbourne is the coffee capital of the Antipodes and - perhaps - the world.
+                                You can get a first-rate cup anywhere in Melbourne these days, but stalwarts of the city's coffee scene can be found everywhere from Seven Seeds in North Melbourne to Proud Mary in Collingwood, Market Lane Coffee in Prahran Market, Wide Open Road in Brunswick, St Ali in South Melbourne, Monk Bhodi Dharma in St Kilda, Patricia in the city… when we said almost anywhere in Melbourne, we meant it. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="things_to_do">
+                    <h3>THINGS TO DO</h3>
+                    <div class="card__element">
+                        <div>
+                            <h4 id="relax">Relax for an afternoon at Abbotsford Convent and Gardens</h4>
+                        </div>
+                        <div>
+                            <img src="img/beach.jpg" alt="the tram to the seaside suburb of St Kilda">
+                        </div>
+                        <div>
+                            <p>
+                                No nuns remain - singing, flying or otherwise - at this 19th-century convent, but there are plenty of arty types to be found lurking amid the historic buildings, which have been converted into studios, galleries, cafes, a bakery, a bar, and a vegetarian restaurant where patrons pay by donation.
+                                Melburnians come for the regular markets and to stroll the riverside grounds. The neighboring Collingwood Children's Farm brings city-slicker kids face to face with all manner of farm animals from guinea pigs and goats to cows. If you're traveling with children, this is an excellent way to spend an afternoon unwinding in a relaxed green space.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card__element">
+                        <div>
+                            <h4 id="game">Watch a game at "The G"- that's the Melbourne Cricket Ground</h4>
+                        </div>
+                        <div>
+                            <img src="img/cricket.jpg" alt="a game of cricket in Australia">
+                        </div>
+                        <div>
+                            <p>
+                                It's not the prettiest or the most architecturally interesting stadium, but the Melbourne Cricket Ground (the MCG, or just "The G") is sacred ground for many Melburnians, carrying within its bulky frame the treasured hope of Grand Final glory for their beloved local footy team.
+                                If you can't make it to a cricket or an Australian Football League (AFL) game, entertaining guided tours are available, visiting many nooks you wouldn't otherwise have access to. Cap it off with a visit to the excellent Australian Sports Museum, which lies within.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="whats_on">
+                    <h3>WHAT'S ON</h3>
+                    <div class="card__element">
+                        <div>
+                            <h4 id="walk">The Long Walk: Naarm 2024 : 25 MAY</h4>
+                        </div>
+                        <div>
+                            <img src="img/walk.jpg" alt="Yarra Park Gardens">
+                        </div>
+                        <div>
+                            <p>
+                                Get down to Yarra Park Gardens at the MCG for a First Nations festival and an afternoon of family-fun. There'll be live music performed by some of Australia’s leading Indigenous artists, plus free sport and art activations. Factor in some cash to feast at the food trucks. The festival ends with the walk to the 'G for the Dreamtime match.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card__element">
+                        <div>
+                            <h4>Hawker 88 Night Market : 10 APR - 8 MAY</h4>
+                        </div>
+                        <div>
+                            <img src="img/night-market.jpg" alt="a night Market in Melbourne">
+                        </div>
+                        <div>
+                            <p>
+                                There's no need to wait until winter for another delicious night market in Melbourne! Hawker 88 returns for five weeks of foodie fun, with different dishes to try each Wednesday night. Start with all your fave Asian snacks, try the best treats from Korea and Japan, plus heaps more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside>
+                <div class="side-card">
+                    <div class="side-card__element-left">
+                        <h3 class="most-popular">MOST POPULAR</h3>
+                        <ol>
+                            <li><a href="#queen">Queen Victoria Market</a></li>
+                            <p>APR 30 | 146 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                              </svg>
+                              </p>
+                            <hr>
+                            <li><a href="#game">Watch a game at "The G"- that's the Melbourne Cricket Ground</a></li>
+                            <p>MAY 1 | 100 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                              </svg>
+                              </p>
+                            <hr>
+                            <li><a href="#short">Short story of Melby</a></li>
+                            <p>MAR 12 | 83 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                              </svg>
+                              </p>
+                            <hr>
+                            <li><a href="#relax">Relax for an afternoon at Abbotsford Convent and Gardens</a></li>
+                            <p>JAN 2 | 62 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                              </svg>
+                              </p>
+                            <hr>
+                            <li><a href="#walk">The Long Walk: Naarm 2024 : 25 MAY</a></li>
+                            <p>APR 16 | 43 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                              </svg>
+                              </p>
+                        </ol>
+                    </div>
+                    <div class="side-card__element-right">
+                        <div class="side-card__element-right__side-note">
+                            <p>MOST POPULAR</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        <footer class ="footer">
+            <div class="social-media">
+                <a href="https://www.facebook.com/cityofmelbourne/" target="_blank">
+                    <img src="img/facebook_logo.png" alt="facebook"/>
+                </a>
+                <a href="https://www.instagram.com/visitmelbourne/?hl=en" targe="_blank">
+                    <img src="img/insta_logo.png" alt="instagram"/>
+                </a>
+            </div>
+            <div>
+                <p>&copy; 2024 www.melbourne.hearth All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
 </html>
