@@ -1,363 +1,78 @@
-:root {
-    --oc-gray-0: #f8f9fa;
-    --oc-gray-1: #f1f3f5;
-    --oc-gray-2: #e9ecef;
-    --oc-gray-3: #dee2e6;
-    --oc-gray-4: #ced4da;
-    --oc-gray-5: #adb5bd;
-    --oc-gray-6: #868e96;
-    --oc-gray-7: #495057;
-    --oc-gray-8: #343a40;
-    --oc-gray-9: #212529;
-    --oc-light-green: #6fb4972f;
-    --oc-green: #119355;
-    --oc-mustard: #EFB11D;
-    --oc-sand: #EBE9E1;
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: var(--oc-sand);
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: var(--oc-gray-9);
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    
-}
-
-aside {
-    display: none;
-}
-
-.link-hover a:link { text-decoration: none; }
-.link-hover a:visited { text-decoration: none; }
-.link-hover a:hover {background: linear-gradient(var(--oc-light-green),var(--oc-light-green)) bottom/100% 100% no-repeat; color: var(--oc-green); border-radius: 1em;}
-.link-hover a:active { text-decoration: none; }
-.navigation-bar a {
-    background: linear-gradient(var(--oc-light-green),var(--oc-light-green)) bottom/100% 0px no-repeat;
-    border-bottom: none;
-    color:var(--oc-green);
-    text-decoration: none;
-    transition:.3s ease-in-out,color .3s ease-in-out;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.navigation-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
-    height: auto;
-    font-size: 1.5rem;
-    color: var(--oc-gray-9);
-    font-weight: 500;
-}
-
-.navigation-bar ul {
-    display : flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.navigation-bar ul li {
-    margin: 10px 0;
-}
-
-.logo-item a:hover {
-    filter: brightness(1.3);
-}
-
-.logo-melbourne img {
-    width : 12rem;
-    height: auto;
-}
-
-.logo-admin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--oc-gray-9);
-    width: 2rem;
-}
-
-.logo-admin svg:hover {
-    color:var(--oc-green);
-    transition:.3s ease-in-out,color .3s ease-in-out;
-}
-
-.hero-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../img/melbourne_hero.jpg");
-    filter: grayscale(1);
-    height: 100vh;
-    padding-top: 30%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border-radius: 1em;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}
-
-.hero-header:hover {
-    transition:1s ease-in-out;
-    filter:none;
-}
-
-
-.hero-text {
-    position: absolute;      /* Needed to center in the hero header */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Translate to align in the center */
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    color: var(--oc-gray-0);
-    font-size: 2em;
+    background-color: blanchedalmond;
 }
 
-.hero-text__h1 {
-    font-size: 4em;
+.titre_principal{
+    color:rgb(232, 168, 5);
 }
 
-.feed {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}
-
-.feed h3 {
-    color: var(--oc-gray-0);
-	background-color:var(--oc-mustard);
-	border-radius: 1em;
-	padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    width: 100%;
-    height: 50%;
-    text-align: center;
-
-
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
+.ribbon{
+    background-color:rgb(232, 168, 5);
+    padding: .5rem .3rem;
     
 }
 
-.card__element {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin: 0.5rem;
-    align-items: center;
-    border: none;
-    border-radius: 1em;
-    transition: 0.3s;
-}
-
-.card__element:hover {
+.logo{
+    width: 300px;
+    padding: .5rem .3rem;
+    border-radius: 50%;
     
-    background-color: rgba(239, 177, 29, 0.1);
-    box-shadow: 3px 3px 3px var(--oc-gray-4),
-    -3px 3px 3px var(--oc-gray-4);
 }
 
-
-.card__element p {
-    width : 90%;
-    height: 100%;
-    display: block;
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
+.concert{
+    width: 300px;
 }
 
-.card__element img {
-    height: 15rem;
-    width: 15rem;
-    border-radius: 1em;
+a {
+    color: white; /* Set the default text color */
+    text-decoration: none; /* Remove the default underline */
+  }
+  
+  /* Hover styles for the link */
+  a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color:darkblue; /* Change text color on hover */
+  }
+
+  p{
+    margin: 5%;
+  }
+
+  hr{
+    border-color:rgb(232, 168, 5);
+    
+  }
+
+  .social_media img {
+    width: 30px; /* Adjust the width according to your icon size */
+    height: auto; /* Maintain aspect ratio */
 }
 
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.6em;
-    margin-top: 2rem;;
-}
-.social-media img {
-    width: 2rem;
-    height: auto;   
-}
-
-.social-media a {
+.social_media a {
     display: inline-block;
     margin: 0 10px;
 }
 
-.social-media a:hover {
-    filter: brightness(1.3);
+.social_media a:hover {
+    filter: brightness(1.2); /* Increase brightness on hover */
 }
 
-/* -------------------------------- @media -------------------------------- */ 
+ul {
+    text-align: center; /* Center-align the list items */
+    display: inline-block; /* Display list items as inline-block */
+}
+  
+li {   
+    text-align: left; /* Reset text alignment inside list items */
+}
 
-@media (min-width: 768px) {
-    
-    main {
-        display: flex;
-        flex-direction: row;
-    }
+img{
+    max-width: 100%;
+    height: auto;
+}
 
-    .feed {
-        display: flex;
-        width: 70%;
-        margin-right: 0.25rem ;
-    }
-    aside {
-        margin-top: 0.65rem;
-        display: flex;
-        width: 30%;
-        margin-left: 0.25rem;
-        margin-right: 0.5rem;
-
-    }
-    
-    .side-card {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        box-sizing: border-box;
-        margin: 0.5rem;
-        height: 15%;
-        border: none;
-        border-radius: 1em;
-        transition: 0.3s;
-        background: var(--oc-green);
-        box-shadow: 3px 3px 3px var(--oc-gray-4),
-        -3px 3px 3px var(--oc-gray-4);
-        padding: 1rem;
-        color: var(--oc-gray-0);
-    }
-
-    .side-card a{
-        text-decoration: none;
-        color: var(--oc-gray-0);
-    }
-
-    .side-card a:link { text-decoration: none; }
-    .side-card a:visited { text-decoration: none; }
-    .side-card a:hover {color: var(--oc-mustard);transition:.3s ease-in-out,color .3s ease-in-out;}
-    .side-card a:active { text-decoration: none; }
-
-    .side-card svg {
-        height: 1.3em;
-        padding-top: 0.5em;
-    }
-
-    .side-card__element-left {
-        display: flex;
-        height: auto;
-        width: 70%;
-        flex-direction: column;
-    }
-
-    .side-card__element-left li {
-        font-size: large;
-        font-weight: bold;
-        height: auto;
-    }
-
-    .side-card__element-left p {
-        margin-top: -0.0rem;
-        font-size: small;
-    }
-
-    .most-popular {
-        font-weight: 600;
-        font-size: 1.5rem;
-
-    }
-
-    hr {
-        color: var(--oc-mustard);
-    }
-
-    .side-card__element-right {
-        display: flex;
-        height: auto;
-        width: 30%;
-        justify-content: flex-end;
-    }
-
-    .side-card__element-right__side-note p {
-        width: auto;
-        color: hwb(151 4% 65%);
-        text-orientation: mixed;
-        writing-mode: vertical-rl;
-        transform: rotate(-180deg);
-        font-weight: bold;
-        font-size: 5rem;
-        margin-right: -2.5rem;
-        font-family: "Passion One", sans-serif;
-        font-weight: 700;
-        font-style: normal;     
-    }
-    
-
-    .navigation-bar {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        font-size: 1.5rem;
-    }
-
-    .navigation-bar ul {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .navigation-bar ul li {
-        margin: 0 15px;
-    }
-    
-    .logo-melbourne img {
-        width: 12em;
-        margin-right: 100%;
-    }
-    
-    .navigation-bar ul li {
-        margin: 0 20px;
-        flex-direction: row;
-    }
-
-    .logo-admin {
-        width: 2em;
-    }
+audio{
+    padding: .5rem .3rem; ;
 }
