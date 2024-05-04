@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: var(--oc-sand);
+    background-color: var(--oc-gray-0);
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: var(--oc-gray-9);
@@ -49,8 +49,8 @@ aside {
 .navigation-bar {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
+    justify-content: center;
+    align-items: center;
     height: auto;
     font-size: 1.5rem;
     color: var(--oc-gray-9);
@@ -86,7 +86,7 @@ aside {
     align-items: center;
     justify-content: center;
     color: var(--oc-gray-9);
-    width: 2rem;
+    width: 3rem;
 }
 
 .logo-admin svg:hover {
@@ -177,6 +177,11 @@ aside {
     transition: 0.3s;
 }
 
+.card__element h4 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 .card__element:hover {
     
     background-color: rgba(239, 177, 29, 0.1);
@@ -210,8 +215,38 @@ aside {
     font-size: 0.6em;
     margin-top: 2rem;;
 }
+
+.move-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.move-up svg {
+    width: 3rem;
+}
+
+.move-up p {
+    margin-top: 0;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+.move-up svg:hover {
+    transition:.3s ease-in-out;
+    color: var(--oc-green);
+}
+a:active { text-decoration: none; }
+a {
+    color:var(--oc-gray-9);
+}
+
 .social-media img {
-    width: 2rem;
+    width: 2.5rem;
     height: auto;   
 }
 
@@ -315,6 +350,7 @@ aside {
     }
 
     .side-card__element-right__side-note p {
+        position: relative;
         width: auto;
         color: hwb(151 4% 65%);
         text-orientation: mixed;
@@ -334,7 +370,7 @@ aside {
         justify-content: center;
         align-items: center;
         height: auto;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .navigation-bar ul {
