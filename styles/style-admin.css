@@ -51,9 +51,14 @@ body {
     width: 100%;
 }
 
-.left-sidebar__top img {
-    width: 14rem;
+.logo-melbourne img{
+    width: 12rem;
     height: auto;
+}
+
+.left-sidebar__top {
+    padding: 1rem;
+    margin-top: 1.7rem;
 }
 
 .left-sidebar__top img:hover {
@@ -71,7 +76,7 @@ body {
 
 .left-sidebar__nav h3 {
     margin: 0;
-    padding: 10px 0;
+    padding: 1rem 0;
     text-align: center;
     text-decoration: var(--oc-green) wavy underline;
     text-decoration-thickness: 1px;
@@ -82,9 +87,6 @@ body {
     border-bottom: none;
     color:var(--oc-gray-9);
     text-decoration: none;
-    
-    padding-right: 10px;
-    padding-left: 10px;
 }
 
 .left-sidebar ul {
@@ -119,6 +121,7 @@ body {
     align-items: center;
     height: auto;
     width: 100%;
+    padding-top: 1.5rem;
 }
 
 .content__top {
@@ -127,6 +130,7 @@ body {
     justify-content: center;
     text-align: center;
     width: 100%;
+    padding-bottom: 1rem;
 }
 
 .content__top__left {
@@ -347,6 +351,10 @@ a {
 
     #auth {
         margin-top: 3rem;
+    }
+
+    .content-wrapper {
+        padding-top: 0;
     }
 
     .content__top {

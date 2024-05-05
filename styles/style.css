@@ -69,7 +69,7 @@ aside {
 
 
 .navigation-bar ul li {
-    margin: 10px 0;
+    margin: 1rem 0;
 }
 
 .logo-item a:hover {
@@ -385,7 +385,6 @@ a {
     
     .logo-melbourne img {
         width: 12em;
-        margin-right: 100%;
     }
     
     .navigation-bar ul li {
