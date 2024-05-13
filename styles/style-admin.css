@@ -19,6 +19,10 @@
     scroll-behavior: smooth;
 }
 
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
 body {
     background-color: var(--oc-gray-0);
     font-family: "Roboto", sans-serif;
